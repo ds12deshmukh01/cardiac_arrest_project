@@ -1,14 +1,14 @@
 # Cardiac Arrest Prediction App
 
 ## a. Problem Statement
-Cardiac arrest is a critical medical emergency and one of the leading causes of sudden death worldwide. Early detection and accurate prediction of risk factors can save lives by enabling timely intervention.  
-The goal of this project is to build a **Streamlit web application** that allows users to test multiple machine learning models on cardiac arrest data, evaluate their performance, and visualize results.  
-The app provides an interactive interface for uploading test datasets, selecting models, and viewing evaluation metrics, confusion matrices, and classification reports.
+Cardiac arrest is a life‑threatening condition and remains one of the most common causes of sudden mortality worldwide. Detecting cardiac risks early and predicting outcomes accurately can significantly improve survival rates through timely medical care.  
+This project aims to develop a streamlit application that enables users to experiment with multiple machine learning models on cardiac data, assess their performance, and visualize the results.  
+The application provides an interactive interface for uploading test datasets, selecting models, and reviewing evaluation metrics, confusion matrices, and classification reports.
 
 ---
 
 ## b. Dataset Description
-The dataset used is the **UCI Heart Disease dataset (heart.csv)**, which contains patient health records with attributes such as:
+The dataset used is the **UCI Heart Disease dataset (heart.csv)**, which contains patient health records with attributes relevant to cardiac health:
 
 - **Age**: Patient’s age in years  
 - **Sex**: Male (1) or Female (0)  
@@ -25,16 +25,16 @@ The dataset used is the **UCI Heart Disease dataset (heart.csv)**, which contain
 - **Thalassemia (thal)**: 1 = normal, 2 = fixed defect, 3 = reversible defect  
 - **Target**: 1 = cardiac arrest risk present, 0 = no risk  
 
-This dataset is widely used for benchmarking classification models in healthcare.
+This dataset is widely recognized for benchmarking classification models in healthcare research.
 
 ---
 
 ## c. Models Used
-Six machine learning models were trained and evaluated:
+Six machine learning models were trained and evaluated to predict cardiac arrest risk:
 
 - Logistic Regression  
 - Decision Tree  
-- k-Nearest Neighbors (kNN)  
+- k‑Nearest Neighbors (kNN)  
 - Naive Bayes  
 - Random Forest (Ensemble)  
 - XGBoost (Ensemble)  
@@ -58,9 +58,9 @@ Six machine learning models were trained and evaluated:
 
 | ML Model Name        | Observation |
 |----------------------|-------------|
-| Logistic Regression  | Performs well with balanced accuracy and recall. Interpretable and useful for understanding feature importance, but slightly weaker than tree-based models. |
-| Decision Tree        | Very strong performance with high accuracy and precision. May overfit if not pruned properly. |
-| kNN                  | Performs reasonably well but is sensitive to the choice of k and scaling of features. Slightly lower recall compared to Logistic Regression. |
-| Naive Bayes          | Decent performance with good recall, but assumes feature independence, which may not hold true in medical datasets. |
-| Random Forest        | Achieves perfect scores due to ensemble averaging, reducing overfitting and improving generalization. Highly reliable for this dataset. |
-| XGBoost              | Also achieves perfect scores, leveraging gradient boosting for superior performance. Highly effective but computationally more intensive. |
+| Logistic Regression  | Provides balanced accuracy and recall. It is interpretable and useful for understanding cardiac risk factors, though slightly weaker than tree‑based models. |
+| Decision Tree        | Delivers very high accuracy and precision. However, it can overfit cardiac data if not pruned carefully. |
+| kNN                  | Performs reasonably well but is sensitive to the choice of k and feature scaling. Recall is slightly lower compared to Logistic Regression. |
+| Naive Bayes          | Shows decent performance with strong recall, but assumes independence among features, which may not fully apply to cardiac datasets. |
+| Random Forest        | Achieves perfect scores thanks to ensemble averaging, reducing overfitting and improving generalization. Highly reliable for cardiac risk prediction. |
+| XGBoost              | Also achieves perfect scores, leveraging gradient boosting for superior performance. Very effective but computationally more demanding. |
