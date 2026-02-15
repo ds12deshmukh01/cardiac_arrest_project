@@ -6,8 +6,8 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title="Heart Disease Prediction", layout="wide")
-st.title("Heart Disease Prediction App")
+st.set_page_config(page_title="Cardiac Arrest Analysis", layout="wide")
+st.title("Cardiac Arrest Analysis")
 
 # Upload dataset
 uploaded_file = st.file_uploader("📂 Upload test dataset (CSV)", type=["csv"])
@@ -56,3 +56,4 @@ if uploaded_file is not None:
         st.error("Uploaded CSV must contain a 'target' column for evaluation.")
 else:
     st.info("ℹPlease upload a test dataset CSV to evaluate the model.")
+
